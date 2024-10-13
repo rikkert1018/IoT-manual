@@ -39,18 +39,9 @@
 <h3>Software</h3>
 <ul>
     <li><strong>Arduino IDE:</strong> The integrated development environment for programming the ESP8266.</li>
-    <li><strong>Required Libraries:</strong> Install the following libraries in the Arduino IDE:
-        <ul>
-            <li><code>ESP8266WiFi:</code> For WiFi connectivity.</li>
-            <li><code>WiFiClientSecure:</code> For secure client connections.</li>
-            <li><code>UniversalTelegramBot:</code> For communication with Telegram.</li>
-            <li><code>Adafruit NeoPixel:</code> For controlling the WS2812B LED strip.</li>
-            <li><code>ArduinoJson:</code> For parsing JSON data from OpenWeatherMap.</li>
-        </ul>
-    </li>
 </ul>
 
-<img src="img/library-install.jpg" alt="Foto knop" width="300">
+
 
 <h2>⚙️ Step 1: Setting Up Arduino IDE</h2>
 <h3>1. Install ESP8266 Support</h3>
@@ -62,11 +53,11 @@
     <li>In the <strong>Additional Board Manager URLs</strong> field, paste the following URL:</li>
     <pre>http://arduino.esp8266.com/stable/package_esp8266com_index.json</pre>
     <li>Click OK to close the preferences window.</li>
-    <img src="img/foto-screenshot-url-plakken.jpg" alt="Foto knop" width="500" height="300">
+    <img src="img/foto-screenshot-url-plakken.jpg" alt="Foto knop" width="500">
     <li>Next, navigate to <strong>Tools > Board > Board Manager</strong>.</li>
      <img src="img/board-manager.jpg" alt="Foto knop" width="500" height="300">
     <li>Type <strong>ESP8266</strong> in the search bar and click the Install button for the ESP8266 by ESP8266 Community.</li>
-    <img src="img/board-manager.jpg" alt="Foto knop" width="500" height="300">
+    <img src="img/board-manager-esp.jpg" alt="Foto knop" width="500">
 </ol>
 
 <h3>2. Install Libraries</h3>
@@ -80,6 +71,7 @@
             <li><code>UniversalTelegramBot</code></li>
             <li><code>Adafruit NeoPixel</code></li>
             <li><code>ArduinoJson</code></li>
+            <li></li><img src="img/library-install.jpg" alt="Foto knop" width="300"></li>
         </ul>
     </li>
 </ol>
@@ -87,15 +79,17 @@
 <h2>🔌 Step 2: Hardware Connections</h2>
 <p>Follow these steps to connect the hardware components:</p>
 <ul>
-    <li><strong>LED Strip:</strong> Connect the data pin (DIN) of the LED strip to D2 on the ESP8266. Connect the power (5V) and ground (GND) pins of the LED strip to the corresponding pins on the ESP8266.</li>
-    <li><strong>Pushbutton:</strong> Connect one terminal of the button to D1 on the ESP8266 and the other terminal to GND.</li>
+    <li><strong>LED Strip:</strong> Connect the data pin (DIN) (yellow) of the LED strip to D2 on the ESP8266. Connect the power (5V) (red) to the 3v3 pin and ground (GND) (black) to the GND pin.</li>
+    <img src="img/LED-aangesloten.jpg" alt="Foto knop" width="300">
+    <li><strong>Pushbutton:</strong> Connect the black wire (left pin of the button) to the D1 pin of the ESP8266 and the grey wire (middle pin of the button) to a GND pin on the ESP 8266. <strong> Important:</strong> the purple wire of the button (right pin) should not be connected.</li>
+    <img src="img/knop-aangeloten.jpg" alt="Foto knop" width="300">
 </ul>
 
 <h2>📝 Step 3: Configure and Upload Code</h2>
 <p>To upload the code to the ESP8266, follow these steps:</p>
 <ol>
     <li>Open the Arduino IDE and paste the code below into a new sketch.</li>
-    <li>Replace the placeholders for your WiFi credentials, OpenWeatherMap API key, and Telegram Bot Token with your own values.</li>
+    <li>Replace the placeholders for your WiFi credentials</li>
 </ol>
 
 <pre><code>#include &lt;ESP8266WiFi.h&gt;
@@ -315,7 +309,16 @@ void handleTemperatureMessage(String message, String chat_id) {
 }
 </code></pre>
 
-<h2>📱 Step 4: Set Up Your Telegram Bot</h2>
+<h2>📱 Step 4: Get your weather API</h2>
+<P></P>
+<ol>
+    <li>Go to https://openweathermap.org and make a account.</li>
+    <li> When you have a account go to the top right of your screen where your account is located, there you will find 'My API keys'</li>
+    
+    <li>On this page you can find your keys, copy the key and past it on between the brackets on line 14 of the sketch in the arduino IDE</li>
+</ol>
+
+<h2>📱 Step 5: Set Up Your Telegram Bot</h2>
 <p>To set up your Telegram bot:</p>
 <ol>
     <li>Open Telegram and search for <strong>BotFather</strong>.</li>
@@ -323,7 +326,7 @@ void handleTemperatureMessage(String message, String chat_id) {
     <li>Follow the instructions to obtain your Bot Token, which you'll need to replace in the code.</li>
 </ol>
 
-<h2>✅ Step 5: Enjoy Your Smart Space Heater!</h2>
+<h2>✅ Step 6: Enjoy Your Smart Space Heater!</h2>
 <p>Once everything is set up, you can control your space heater via Telegram using the following commands:</p>
 <ul>
     <li><strong>Heater on:</strong> Turns the heater on.</li>
