@@ -11,6 +11,27 @@
     <li><strong>USB Cable:</strong> To connect the ESP8266 to your computer for programming.</li>
 </ul>
 
+<div style="display: inline-block; text-align: center; margin: 10px;">
+    <img src="img/Foto-nodeMCU.jpg" alt="Foto knop 1" width="250" />
+    <p style="font-size: 12px;">Button 1</p>
+</div>
+<div style="display: inline-block; text-align: center; margin: 10px;">
+    <img src="images/Foto-knop2.jpg" alt="Foto knop 2" width="250" />
+    <p style="font-size: 12px;">Button 2</p>
+</div>
+<div style="display: inline-block; text-align: center; margin: 10px;">
+    <img src="images/Foto-knop3.jpg" alt="Foto knop 3" width="250" />
+    <p style="font-size: 12px;">Button 3</p>
+</div>
+<div style="display: inline-block; text-align: center; margin: 10px;">
+    <img src="images/Foto-knop4.jpg" alt="Foto knop 4" width="250" />
+    <p style="font-size: 12px;">Button 4</p>
+</div>
+<div style="display: inline-block; text-align: center; margin: 10px;">
+    <img src="images/Foto-knop5.jpg" alt="Foto knop 5" width="250" />
+    <p style="font-size: 12px;">Button 5</p>
+</div>
+
 <h3>Software</h3>
 <ul>
     <li><strong>Arduino IDE:</strong> The integrated development environment for programming the ESP8266.</li>
@@ -24,6 +45,8 @@
         </ul>
     </li>
 </ul>
+
+
 
 <h2>⚙️ Step 1: Setting Up Arduino IDE</h2>
 <h3>1. Install ESP8266 Support</h3>
