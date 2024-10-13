@@ -19,7 +19,7 @@
         </td>
         <td style="text-align: center; margin: 10px;">
             <img src="img/Foto-LED-strip.jpg" alt="WS2812B RGB LED Strip" width="250" height="300" />
-            <p style="font-size: 12px;">WS2812B RGB LED Strip</p>
+            <p style="font-size: 12px;">RGB LED Strip</p>
         </td>
         <td style="text-align: center; margin: 10px;">
             <img src="img/Foto-knop.jpg" alt="Foto knop 4" width="250" height="300" />
@@ -50,7 +50,7 @@
     </li>
 </ul>
 
-
+<img src="img/library-install.jpg" alt="Foto knop" width="300">
 
 <h2>⚙️ Step 1: Setting Up Arduino IDE</h2>
 <h3>1. Install ESP8266 Support</h3>
@@ -58,11 +58,15 @@
 <ol>
     <li>Open the Arduino IDE.</li>
     <li>Go to <strong>File > Preferences</strong>.</li>
+    <img src="img/file-example-foto.jpg" alt="Foto knop" width="300">
     <li>In the <strong>Additional Board Manager URLs</strong> field, paste the following URL:</li>
     <pre>http://arduino.esp8266.com/stable/package_esp8266com_index.json</pre>
     <li>Click OK to close the preferences window.</li>
+    <img src="img/foto-screenshot-url-plakken.jpg" alt="Foto knop" width="500" height="300">
     <li>Next, navigate to <strong>Tools > Board > Board Manager</strong>.</li>
+     <img src="img/board-manager.jpg" alt="Foto knop" width="500" height="300">
     <li>Type <strong>ESP8266</strong> in the search bar and click the Install button for the ESP8266 by ESP8266 Community.</li>
+    <img src="img/board-manager.jpg" alt="Foto knop" width="500" height="300">
 </ol>
 
 <h3>2. Install Libraries</h3>
