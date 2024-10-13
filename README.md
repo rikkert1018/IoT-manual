@@ -335,20 +335,12 @@ void handleTemperatureMessage(String message, String chat_id) {
 <p>To set up your Telegram bot:</p>
 <ol>
     <li>Download and open Telegram and search for <strong>BotFather</strong>.</li>
-    <li>Start a chat with BotFather and use the command <strong>/newbot</strong> to create a new bot.</li>
-        <table>
-    <tr>
-        <td style="text-align: center; margin: 10px;">
-            <img src="img/API-key-web.jpg" alt="Microcontroller" width="650" height="250" />
-            <p style="font-size: 12px;">Bot father on telegram</p>
-        </td>
-        <td style="text-align: center; margin: 10px;">
-            <img src="img/weather-paste.jpg" alt="WS2812B RGB LED Strip" width="250"  />
-            <p style="font-size: 12px;">API key pasted on line 14</p>
-        </td>
-    </tr>
-</table>
-    <li>Follow the instructions to obtain your Bot Token, which you'll need to replace in the code.</li>
+   <img src="img/search-bot.jpg" alt="Microcontroller"  height="350" />
+    <li>Start a chat with BotFather and use the command <strong>/newbot</strong>, follow the constructions to get <strong>a bot token</strong> and to create a new bot.</li>
+            <img src="img/pick-name-bot.jpg" alt="Microcontroller"  height="350" />   
+      <li> Paste the token the bot gave you on line 17 between the brackets:</li>
+        <li>Download and open Telegram and search for <strong>BotFather</strong>.</li>
+    
 </ol>
 
 <h2>✅ Step 6: Enjoy Your Smart Space Heater!</h2>
