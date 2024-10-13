@@ -22,15 +22,15 @@
             <p style="font-size: 12px;">Button 2</p>
         </td>
         <td style="text-align: center; margin: 10px;">
+            <img src="img/Foto-knop.jpg" alt="Foto knop 4" width="250" />
+            <p style="font-size: 12px;">Button 4</p>
+        </td>
+                <td style="text-align: center; margin: 10px;">
             <img src="img/Foto-kabels.jpg" alt="Foto knop 3" width="250" />
             <p style="font-size: 12px;">Button 3</p>
         </td>
         <td style="text-align: center; margin: 10px;">
-            <img src="images/Foto-knop4.jpg" alt="Foto knop 4" width="250" />
-            <p style="font-size: 12px;">Button 4</p>
-        </td>
-        <td style="text-align: center; margin: 10px;">
-            <img src="images/Foto-knop5.jpg" alt="Foto knop 5" width="250" />
+            <img src="img/Foto-usb.jpg" alt="Foto knop 5" width="250" />
             <p style="font-size: 12px;">Button 5</p>
         </td>
     </tr>
