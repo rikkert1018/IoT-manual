@@ -14,24 +14,24 @@
 <table>
     <tr>
         <td style="text-align: center; margin: 10px;">
-            <img src="img/Foto-nodeMCU.jpg" alt="Foto knop 1" width="250" />
-            <p style="font-size: 12px;">Button 1</p>
+            <img src="img/Foto-nodeMCU.jpg" alt="Microcontroller" width="250" height="300" />
+            <p style="font-size: 12px;">Microcontroller</p>
         </td>
         <td style="text-align: center; margin: 10px;">
-            <img src="img/Foto-LED-strip.jpg" alt="Foto knop 2" width="250" />
-            <p style="font-size: 12px;">Button 2</p>
+            <img src="img/Foto-LED-strip.jpg" alt="WS2812B RGB LED Strip" width="250" height="300" />
+            <p style="font-size: 12px;">WS2812B RGB LED Strip</p>
         </td>
         <td style="text-align: center; margin: 10px;">
-            <img src="img/Foto-knop.jpg" alt="Foto knop 4" width="250" />
-            <p style="font-size: 12px;">Button 4</p>
+            <img src="img/Foto-knop.jpg" alt="Foto knop 4" width="250" height="300" />
+            <p style="font-size: 12px;">Pushbutton</p>
         </td>
                 <td style="text-align: center; margin: 10px;">
-            <img src="img/Foto-kabels.jpg" alt="Foto knop 3" width="250" />
-            <p style="font-size: 12px;">Button 3</p>
+            <img src="img/Foto-kabels.jpg" alt="Foto knop 3" width="250" height="300" />
+            <p style="font-size: 12px;">Jumper Wires</p>
         </td>
         <td style="text-align: center; margin: 10px;">
-            <img src="img/Foto-usb.jpg" alt="Foto knop 5" width="250" />
-            <p style="font-size: 12px;">Button 5</p>
+            <img src="img/Foto-usb.jpg" alt="Foto knop 5" width="250" height="300" />
+            <p style="font-size: 12px;">USB Cable</p>
         </td>
     </tr>
 </table>
