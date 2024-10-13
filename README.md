@@ -339,9 +339,18 @@ void handleTemperatureMessage(String message, String chat_id) {
     <li>Start a chat with BotFather and use the command <strong>/newbot</strong>, follow the constructions to get <strong>a bot token</strong> and to create a new bot.</li>
             <img src="img/pick-name-bot.jpg" alt="Microcontroller"  height="350" />   
       <li> Paste the token the bot gave you on line 17 between the brackets:</li>
-        <li>Download and open Telegram and search for <strong>BotFather</strong>.</li>
-    
+ <img src="img/bot-api-paste.jpg" alt="Microcontroller"  height="250" />
 </ol>
+
+<h2> 💻 Step 6: Run the code</h2>
+<p>Now that you put all your data in :</p>
+<ul>
+    <li>On the top right of your screen there is a blue arrow, press on this arrow to run the code</li>
+    <li>Replace the placeholders for your WiFi credentials. Fill your ssid in at line 8 between the brackets and in line 9 your wifi password.
+    The ESP 8266 needs this to make a connection to wifi.</li>
+</ul>
+
+
 
 <h2>✅ Step 6: Enjoy Your Smart Space Heater!</h2>
 <p>Once everything is set up, you can control your space heater via Telegram using the following commands:</p>
