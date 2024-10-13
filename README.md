@@ -316,6 +316,7 @@ void handleTemperatureMessage(String message, String chat_id) {
     <li> When you have a account go to the top right of your screen where your account is located, there you will find 'My API keys'</li>
     <img src="img/API-location.jpg" alt="Foto knop" width="300">
     <li>On this page you can find your keys, copy the key and past it on between the brackets on line 14 of the sketch in the arduino IDE</li>
+    <img src="img/knop-aangeloten.jpg" alt="Foto knop" width="300">
 </ol>
 
 <h2>📱 Step 5: Set Up Your Telegram Bot</h2>
