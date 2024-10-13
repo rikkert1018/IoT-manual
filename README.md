@@ -405,13 +405,14 @@ void handleTemperatureMessage(String message, String chat_id) {
      <p style="font-size: 12px;">The user sends: 15 degrees, the heater turns on and heats accordingly.</p>
     </td>
      <td style="text-align: center; margin: 10px;">
-     <img src="img/img/15degrees-LED.jpg" alt="Microcontroller" width="250"  />
+     <img src="img/15degrees-LED.jpg" alt="Microcontroller" width="250"  />
      <p style="font-size: 12px;">The serial monitor shows that it made a connection with the weather API and it shows a value.</p>
      </td> 
     </tr>
     </table>
     <li><strong>Help:</strong> Displays a list of available commands.</li>
+     <img src="img/help.jpg" alt="Microcontroller" width="250"  />
+    
 </ul>
 <p> In the serial monitor you can see what the system is doing and you can see the messages it recieves, here are a couple of examples:</p>
-
 <p>Enjoy your smart space heater!</p>
