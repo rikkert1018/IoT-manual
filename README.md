@@ -343,11 +343,17 @@ void handleTemperatureMessage(String message, String chat_id) {
 </ol>
 
 <h2> 💻 Step 6: Run the code</h2>
-<p>Now that you put all your data in :</p>
+<p>Now that you put all your data in, we can run the code</p>
 <ul>
     <li>On the top right of your screen there is a blue arrow, press on this arrow to run the code</li>
-    <li>Replace the placeholders for your WiFi credentials. Fill your ssid in at line 8 between the brackets and in line 9 your wifi password.
-    The ESP 8266 needs this to make a connection to wifi.</li>
+    <img src="img/blue-arrow.jpg" alt="Microcontroller" />
+   
+    <li>If al the information that you put in is right and all the hardware works as expected then you can see in the serial monitor what the system is doing. The serial monitor can be 
+    found in the top right of your screen
+    <img src="img/blue-arrow.jpg" alt="Microcontroller" />
+    In the serial monitor it should say: 'Wifi Connected'. With your IP adress behind it.</li>
+ 
+
 </ul>
 
 
