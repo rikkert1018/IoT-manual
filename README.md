@@ -89,7 +89,8 @@
 <p>To upload the code to the ESP8266, follow these steps:</p>
 <ol>
     <li>Open the Arduino IDE and paste the code below into a new sketch.</li>
-    <li>Replace the placeholders for your WiFi credentials</li>
+    <li>Replace the placeholders for your WiFi credentials. Fill your ssid in at line 8 between the brackets and in line 9 your wifi password.
+    The ESP 8266 needs this to make a connection to wifi.</li>
 </ol>
 
 <pre><code>#include &lt;ESP8266WiFi.h&gt;
@@ -316,14 +317,37 @@ void handleTemperatureMessage(String message, String chat_id) {
     <li> When you have a account go to the top right of your screen where your account is located, there you will find 'My API keys'</li>
     <img src="img/API-location.jpg" alt="Foto knop" width="300">
     <li>On this page you can find your keys, copy the key and past it on between the brackets on line 14 of the sketch in the arduino IDE</li>
-    <img src="img/knop-aangeloten.jpg" alt="Foto knop" width="300">
+    <table>
+    <tr>
+        <td style="text-align: center; margin: 10px;">
+            <img src="img/API-key-web.jpg" alt="Microcontroller" width="650" height="250" />
+            <p style="font-size: 12px;">API key on the website</p>
+        </td>
+        <td style="text-align: center; margin: 10px;">
+            <img src="img/weather-paste.jpg" alt="WS2812B RGB LED Strip" width="250"  />
+            <p style="font-size: 12px;">API key pasted on line 14</p>
+        </td>
+    </tr>
+</table>
 </ol>
 
 <h2>📱 Step 5: Set Up Your Telegram Bot</h2>
 <p>To set up your Telegram bot:</p>
 <ol>
-    <li>Open Telegram and search for <strong>BotFather</strong>.</li>
+    <li>Download and open Telegram and search for <strong>BotFather</strong>.</li>
     <li>Start a chat with BotFather and use the command <strong>/newbot</strong> to create a new bot.</li>
+        <table>
+    <tr>
+        <td style="text-align: center; margin: 10px;">
+            <img src="img/API-key-web.jpg" alt="Microcontroller" width="650" height="250" />
+            <p style="font-size: 12px;">Bot father on telegram</p>
+        </td>
+        <td style="text-align: center; margin: 10px;">
+            <img src="img/weather-paste.jpg" alt="WS2812B RGB LED Strip" width="250"  />
+            <p style="font-size: 12px;">API key pasted on line 14</p>
+        </td>
+    </tr>
+</table>
     <li>Follow the instructions to obtain your Bot Token, which you'll need to replace in the code.</li>
 </ol>
 
