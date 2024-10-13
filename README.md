@@ -351,8 +351,6 @@ void handleTemperatureMessage(String message, String chat_id) {
     found in the top right of your screen </li>
     <img src="img/serial-monitor.jpg" alt="Microcontroller" />
     <li>In the serial monitor it should say: 'Wifi Connected'. With your IP adress behind it.</li>
- 
-
 </ul>
 
 
@@ -361,9 +359,24 @@ void handleTemperatureMessage(String message, String chat_id) {
 <p>Once everything is set up, you can control your space heater via Telegram using the following commands:</p>
 <ul>
     <li><strong>Heater on:</strong> Turns the heater on.</li>
+    <table>
+    <tr>
+     <td style="text-align: center; margin: 10px;">
+     <img src="img/15degrees-text.jpg" alt="WS2812B RGB LED Strip" width="250"/>
+     <p style="font-size: 12px;">The user sends: heater on, the heater turns on.</p>
+    </td>
+     <td style="text-align: center; margin: 10px;">
+     <img src="img/heater-on-LED.jpg" alt="Microcontroller" width="250" height="300" />
+     <p style="font-size: 12px;">The heater turns on and the serial monitor confirms it.</p>
+     </td> 
+    </tr>
+    </table>
     <li><strong>Heater off:</strong> Turns the heater off.</li>
+    
     <li><strong>Auto heat:</strong> Enables automatic heating based on the weather data.</li>
     <li><strong>&lt;temperature&gt; degrees:</strong> Changes the LED color based on the specified temperature range (10-30 degrees).</li>
     <li><strong>Help:</strong> Displays a list of available commands.</li>
 </ul>
+<p> In the serial monitor you can see what the system is doing and you can see the messages it recieves, here are a couple of examples:</p>
+
 <p>Enjoy your smart space heater!</p>
