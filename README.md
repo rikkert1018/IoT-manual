@@ -366,15 +366,50 @@ void handleTemperatureMessage(String message, String chat_id) {
      <p style="font-size: 12px;">The user sends: heater on, the heater turns on.</p>
     </td>
      <td style="text-align: center; margin: 10px;">
-     <img src="img/heater-on-LED.jpg" alt="Microcontroller" width="250" height="300" />
+     <img src="img/heater-on-LED.jpg" alt="Microcontroller" width="250"  />
      <p style="font-size: 12px;">The heater turns on and the serial monitor confirms it.</p>
      </td> 
     </tr>
     </table>
     <li><strong>Heater off:</strong> Turns the heater off.</li>
-    
-    <li><strong>Auto heat:</strong> Enables automatic heating based on the weather data.</li>
+    <table>
+    <tr>
+     <td style="text-align: center; margin: 10px;">
+     <img src="img/heater-off-text.jpg" alt="WS2812B RGB LED Strip" width="250"/>
+     <p style="font-size: 12px;">The user sends: heater off, the heater turns off.</p>
+    </td>
+     <td style="text-align: center; margin: 10px;">
+     <img src="img/heater-off-LED.jpg" alt="Microcontroller" width="250" />
+     <p style="font-size: 12px;">The heater turns off and the serial monitor confirms it.</p>
+     </td> 
+    </tr>
+    </table>
+    <li><strong>Auto heat:</strong> Enables automatic heating based on the weather data. The ESP makes a connection with the weather API to give the right data.</li>
+    <table>
+    <tr>
+     <td style="text-align: center; margin: 10px;">
+     <img src="img/confirmation-auto-heat.jpg" alt="WS2812B RGB LED Strip" width="250"/>
+     <p style="font-size: 12px;">The user sends: Auto heat, the heater turns on..</p>
+    </td>
+     <td style="text-align: center; margin: 10px;">
+     <img src="img/auto-heat-LED.jpg" alt="Microcontroller" width="250"  />
+     <p style="font-size: 12px;">The serial monitor shows that it made a connection with the weather API and it shows a value.</p>
+     </td> 
+    </tr>
+    </table>
     <li><strong>&lt;temperature&gt; degrees:</strong> Changes the LED color based on the specified temperature range (10-30 degrees).</li>
+    <table>
+    <tr>
+     <td style="text-align: center; margin: 10px;">
+     <img src="img/15degrees-text.jpg" alt="WS2812B RGB LED Strip" width="250"/>
+     <p style="font-size: 12px;">The user sends: 15 degrees, the heater turns on and heats accordingly.</p>
+    </td>
+     <td style="text-align: center; margin: 10px;">
+     <img src="img/img/15degrees-LED.jpg" alt="Microcontroller" width="250"  />
+     <p style="font-size: 12px;">The serial monitor shows that it made a connection with the weather API and it shows a value.</p>
+     </td> 
+    </tr>
+    </table>
     <li><strong>Help:</strong> Displays a list of available commands.</li>
 </ul>
 <p> In the serial monitor you can see what the system is doing and you can see the messages it recieves, here are a couple of examples:</p>
