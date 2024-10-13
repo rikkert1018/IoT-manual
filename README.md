@@ -346,12 +346,11 @@ void handleTemperatureMessage(String message, String chat_id) {
 <p>Now that you put all your data in, we can run the code</p>
 <ul>
     <li>On the top right of your screen there is a blue arrow, press on this arrow to run the code</li>
-    <img src="img/blue-arrow.jpg" alt="Microcontroller" />
-   
+    <img src="img/blue-arrow.jpg" alt="Microcontroller"/>
     <li>If al the information that you put in is right and all the hardware works as expected then you can see in the serial monitor what the system is doing. The serial monitor can be 
-    found in the top right of your screen
-    <img src="img/blue-arrow.jpg" alt="Microcontroller" />
-    In the serial monitor it should say: 'Wifi Connected'. With your IP adress behind it.</li>
+    found in the top right of your screen </li>
+    <img src="img/serial-monitor.jpg" alt="Microcontroller" />
+    <li>In the serial monitor it should say: 'Wifi Connected'. With your IP adress behind it.</li>
  
 
 </ul>
