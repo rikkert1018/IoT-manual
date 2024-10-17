@@ -43,6 +43,7 @@
 
 
 
+
 <h2>⚙️ Step 1: Setting Up Arduino IDE</h2>
 <h3>1. Install ESP8266 Support</h3>
 <p>Follow these steps to add ESP8266 support in the Arduino IDE:</p>
@@ -60,6 +61,8 @@
     <img src="img/board-manager-esp.jpg" alt="Foto knop" width="500">
 </ol>
 
+
+
 <h3>2. Install Libraries</h3>
 <p>To install the required libraries, follow these steps:</p>
 <ol>
@@ -76,6 +79,13 @@
     </li>
 </ol>
 
+<h3>🔌 Troubleshooting:</h3>
+<ul>
+    <li>If the LED strip does not light up, check the wiring connections to ensure they are secure.</li>
+    <li>Make sure the ESP8266 is powered properly and receiving voltage.</li>
+    <li>**ChatGPT Tip:** If you're unsure about wiring diagrams, ask ChatGPT for clarification on specific connections or common wiring errors.</li>
+</ul>
+
 <h2>🔌 Step 2: Hardware Connections</h2>
 <p>Follow these steps to connect the hardware components:</p>
 <ul>
@@ -85,6 +95,14 @@
     <img src="img/knop-aangeloten.jpg" alt="Foto knop" width="300">
 </ul>
 
+<h3>📝 Troubleshooting:</h3>
+<ul>
+    <li>If the upload fails, ensure that the correct board and port are selected in the Arduino IDE.</li>
+    <li>Check that the ESP8266 is properly connected to your computer.</li>
+    <li>**ChatGPT Tip:** If you encounter specific error messages during the upload process, provide the error to ChatGPT for potential solutions or troubleshooting steps.</li>
+</ul>
+
+
 <h2>📝 Step 3: Configure and Upload Code</h2>
 <p>To upload the code to the ESP8266, follow these steps:</p>
 <ol>
@@ -92,6 +110,12 @@
     <li>Replace the placeholders for your WiFi credentials. Fill your ssid in at line 8 between the brackets and in line 9 your wifi password.
     The ESP 8266 needs this to make a connection to wifi.</li>
 </ol>
+<h3>🌐 Troubleshooting:</h3>
+<ul>
+    <li>If you don't receive responses from the bot, check your internet connection and ensure the ESP8266 is connected to WiFi.</li>
+    <li>Verify that the Bot Token is correctly placed in the code.</li>
+    <li>**ChatGPT Tip:** If the bot isn't responding, ask ChatGPT for common troubleshooting steps for Telegram bots or how to check API connections.</li>
+</ul>
 
 <pre><code>#include &lt;ESP8266WiFi.h&gt;
 #include &lt;WiFiClientSecure.h&gt;
@@ -317,19 +341,25 @@ void handleTemperatureMessage(String message, String chat_id) {
     <li> When you have a account go to the top right of your screen where your account is located, there you will find 'My API keys'</li>
     <img src="img/API-location.jpg" alt="Foto knop" width="300">
     <li>On this page you can find your keys, copy the key and past it on between the brackets on line 14 of the sketch in the arduino IDE</li>
-    <table>
-    <tr>
-        <td style="text-align: center; margin: 10px;">
-            <img src="img/API-key-web.jpg" alt="Microcontroller" width="650" height="250" />
+    <ul>
+        <li style="text-align: center; margin: 10px;">
+            <img src="img/API-key-web.jpg" alt="Microcontroller" />
             <p style="font-size: 12px;">API key on the website</p>
-        </td>
-        <td style="text-align: center; margin: 10px;">
-            <img src="img/weather-paste.jpg" alt="WS2812B RGB LED Strip" width="250"  />
+        </li>
+        <li style="text-align: center; margin: 10px;">
+            <img src="img/weather-paste.jpg" alt="WS2812B RGB LED Strip" width="450" height:"350"  />
             <p style="font-size: 12px;">API key pasted on line 14</p>
-        </td>
-    </tr>
-</table>
+        </li>
+    </ul>
+
 </ol>
+
+<h3>📱 Troubleshooting:</h3>
+<ul>
+    <li>If you can't find your API key, ensure you are logged into your OpenWeatherMap account correctly.</li>
+    <li>If you do not have access to 'My API keys', make sure your account is properly verified.</li>
+    <li>**ChatGPT Tip:** If you have questions about how to use an API key or where to input it in the Arduino IDE, ask ChatGPT for guidance and examples.</li>
+</ul>
 
 <h2>📱 Step 5: Set Up Your Telegram Bot</h2>
 <p>To set up your Telegram bot:</p>
@@ -342,6 +372,14 @@ void handleTemperatureMessage(String message, String chat_id) {
  <img src="img/bot-api-paste.jpg" alt="Microcontroller"  height="250" />
 </ol>
 
+<h3>📱 Troubleshooting:</h3>
+<ul>
+    <li>If BotFather does not respond, check your internet connection or try reconnecting to Telegram.</li>
+    <li>Ensure you are following the correct steps to create a new bot; type `/newbot` accurately.</li>
+    <li>**ChatGPT Tip:** If you encounter issues generating a bot token, ask ChatGPT for step-by-step instructions on using Telegram bots or troubleshooting common problems.</li>
+</ul>
+
+
 <h2> 💻 Step 6: Run the code</h2>
 <p>Now that you put all your data in, we can run the code</p>
 <ul>
@@ -352,10 +390,16 @@ void handleTemperatureMessage(String message, String chat_id) {
     <img src="img/serial-monitor.jpg" alt="Microcontroller" />
     <li>In the serial monitor it should say: 'Wifi Connected'. With your IP adress behind it.</li>
 </ul>
-
-
+<h2>💻 Troubleshooting:</h2>
+<ul>
+    <li>If your code does not run, check that you have the correct settings in the Arduino IDE, such as the right board and port settings.</li>
+    <li>If you do not see 'Wifi Connected' in the serial monitor, check your WiFi settings and the ESP connection.</li>
+    <li>**ChatGPT Tip:** If you experience issues running the code, ask ChatGPT for help with debugging error messages or understanding how to use the serial monitor.</li>
+</ul>
 
 <h2>✅ Step 6: Enjoy Your Smart Space Heater!</h2>
+
+<p> In the serial monitor you can see what the system is doing and you can see the messages it recieves.:</p>
 <p>Once everything is set up, you can control your space heater via Telegram using the following commands:</p>
 <ul>
     <li><strong>Heater on:</strong> Turns the heater on.</li>
@@ -412,7 +456,10 @@ void handleTemperatureMessage(String message, String chat_id) {
     </table>
     <li><strong>Help:</strong> Displays a list of available commands.</li>
      <img src="img/help.jpg" alt="Microcontroller" width="250"  />
-    
-</ul>
-<p> In the serial monitor you can see what the system is doing and you can see the messages it recieves, here are a couple of examples:</p>
-<p>Enjoy your smart space heater!</p>
+    <h2>✅ Troubleshooting:</h2>
+    <ul>
+    <li>If the commands are not working, verify that you have entered the correct bot token and that the ESP8266 is connected to the internet.</li>
+    <li>If the heater does not respond, check the hardware connections and ensure the LED strip is properly connected.</li>
+    <li>**ChatGPT Tip:** For help with specific commands that are not functioning or to understand why certain features are not working, ask ChatGPT for tips and advice.</li>
+    </ul>
+    <p>Enjoy your smart space heater!</p>
